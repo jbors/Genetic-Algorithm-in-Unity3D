@@ -22,8 +22,6 @@ public class FishController : MonoBehaviour {
     //Events
     public event Action MovesCompleted;
 
-    //NOTIZEN:
-    //Jeden einzelenen Move mit Fitness bewerten
     void Start()
     {
         rigidbodyFish = GetComponent<Rigidbody2D>();
@@ -63,6 +61,7 @@ public class FishController : MonoBehaviour {
             }
 
             Vector2 nextMove = dna.GetMoveWithIndex(currentMove++);
+            // Debug.Log("MOVE" + nextMove);
             rigidbodyFish.velocity = Vector2.zero;
             rigidbodyFish.AddForce(nextMove*Speed);
             moveCount++;
@@ -74,6 +73,7 @@ public class FishController : MonoBehaviour {
     void UpdateFitness(){
         float Distance = Vector2.Distance(transform.position, Goal.position);
         //We need more to be way better, not just better
+        
         float Fitness = Mathf.Pow((maxDistance - Distance), FitnessExponent);
         dna.UpdateFitness(Fitness);
     }

@@ -3,70 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public static class EvolutionHelper {
-
-    public static List<Vector3> CombineVectorListsRandomly(List<Vector3> VecA,  List<Vector3> VecB)
-    {
-        int maxRange = Mathf.Min(VecA.Count, VecB.Count);
-        List<Vector3> combinedVector = new List<Vector3>();
-
-        for (int i = 0; i < maxRange; i++){
-            float random = Random.Range(0f, 1f);
-            //Coinflip
-            if(random < 0.5f){
-                combinedVector.Add(VecA[i]);
-            } else{
-                combinedVector.Add(VecB[i]);
-            }
-        }
-
-        return combinedVector;  
-    }
-
+    
     public static List<Vector2> CrossoverVec2(List<Vector2> VecA, List<Vector2> VecB)
     {
+        //We combine the 2 vectors into 1 (randomly)
         int maxRange = Mathf.Min(VecA.Count, VecB.Count);
         List<Vector2> combinedVector = new List<Vector2>();
 
         for (int i = 0; i < maxRange; i++)
         {
-            float random = Random.Range(0f, 1f);
-            //Coinflip
-            if (random < 0.5f)
-            {
-                combinedVector.Add(VecA[i]);
-            }
-            else
-            {
-                combinedVector.Add(VecB[i]);
-            }
+            //TODO: randomly add either the move from VecA or from VecB
+            combinedVector.Add(VecA[i]);
         }
 
         return combinedVector;
     }
-
-    public static List<Vector3> MutateMoveset(List<Vector3> moveset, float MutationRate)
-    {
-        for (int i = 0; i < moveset.Count; i++)
-        {
-            float rnd = Random.Range(0f, 1f);
-            if (rnd < MutationRate)
-            {
-                moveset[i] = RandomVector3(moveset[i].GetHashCode());
-            }
-        }
-
-        return moveset;
-    }
-
+    
     public static List<Vector2> MutateMoveset(List<Vector2> moveset, float MutationRate)
     {
         for (int i = 0; i < moveset.Count; i++)
         {
-            float rnd = Random.Range(0f, 1f);
-            if (rnd < MutationRate)
-            {
-                moveset[i] = RandomVector3(moveset[i].GetHashCode());
-            }
+            //TODO: with a possibility of MutationRate, replace this move with a random one
         }
 
         return moveset;
