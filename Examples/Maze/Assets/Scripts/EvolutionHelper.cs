@@ -14,6 +14,7 @@ public static class EvolutionHelper {
         {
             //TODO: randomly add either the move from VecA or from VecB
             combinedVector.Add(VecA[i]);
+            
         }
 
         return combinedVector;

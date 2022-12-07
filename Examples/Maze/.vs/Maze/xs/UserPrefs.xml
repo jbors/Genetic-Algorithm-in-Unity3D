@@ -1,18 +1,34 @@
-﻿<Properties StartupConfiguration="{203E294F-6A57-B963-05D6-83EB30201135}|">
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Evolution.cs">
-    <Files>
-      <File FileName="Assets/Scripts/FishController.cs" Line="76" Column="57" />
-      <File FileName="Assets/Scripts/Evolution.cs" Line="63" Column="6" />
-      <File FileName="Assets/Scripts/EvolutionHelper.cs" Line="86" Column="9" />
-      <File FileName="Assets/Scripts/Population.cs" Line="67" Column="41" />
-      <File FileName="Assets/Scripts/DNA.cs" Line="44" Column="17" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+﻿<Properties StartupConfiguration="{4F293E20-576A-63B9-05D6-83EB30201135}|">
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EvolutionHelper.cs">
+    <Files>
+      <File FileName="Assets/Scripts/FishController.cs" />
+      <File FileName="Assets/Scripts/Evolution.cs" />
+      <File FileName="Assets/Scripts/EvolutionHelper.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Population.cs" />
+      <File FileName="Assets/Scripts/DNA.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Maze" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="EvolutionHelper.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f7a3f880-4ddf-4e53-b180-e2d8a89da671" />
 </Properties>
