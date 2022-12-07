@@ -12,9 +12,15 @@ public static class EvolutionHelper {
 
         for (int i = 0; i < maxRange; i++)
         {
-            //TODO: randomly add either the move from VecA or from VecB
-            combinedVector.Add(VecA[i]);
             
+            //TODO: randomly add either the move from VecA or from VecB
+            if (Random.value > 0.5f)
+            {
+                combinedVector.Add(VecA[i]);
+            } else
+            {
+                combinedVector.Add(VecB[i]);
+            }
         }
 
         return combinedVector;
@@ -25,6 +31,10 @@ public static class EvolutionHelper {
         for (int i = 0; i < moveset.Count; i++)
         {
             //TODO: with a possibility of MutationRate, replace this move with a random one
+            if(Random.value < MutationRate)
+            {
+                moveset[i] = RandomVector3();
+            }
         }
 
         return moveset;
