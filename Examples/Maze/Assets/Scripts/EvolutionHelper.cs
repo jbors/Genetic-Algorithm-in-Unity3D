@@ -33,7 +33,7 @@ public static class EvolutionHelper {
             //TODO: with a possibility of MutationRate, replace this move with a random one
             if(Random.value < MutationRate)
             {
-                moveset[i] = RandomVector3();
+                moveset[i] = RandomVector2();
             }
         }
 
