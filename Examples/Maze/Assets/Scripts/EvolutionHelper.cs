@@ -4,19 +4,19 @@ using UnityEngine;
 
 public static class EvolutionHelper {
     
-    public static List<Vector2> CrossoverVec2(List<Vector2> VecA, List<Vector2> VecB)
+    public static List<Vector2> CrossoverVec2(List<Vector2> Godzilla, List<Vector2> KingKong)
     {
         //We combine the 2 vectors into 1 (randomly)
-        int maxRange = Mathf.Min(VecA.Count, VecB.Count);
-        List<Vector2> combinedVector = new List<Vector2>();
+        int maxRange = Mathf.Min(Godzilla.Count, KingKong.Count);
+        List<Vector2> combinedCreature = new List<Vector2>();
 
         for (int i = 0; i < maxRange; i++)
         {
-            //TODO: randomly add either the move from VecA or from VecB
-            combinedVector.Add(VecA[i]);
+            //TODO: randomly add either the gene from Godzilla or from KingKong
+            combinedCreature.Add(Godzilla[i]);
         }
 
-        return combinedVector;
+        return combinedCreature;
     }
     
     public static List<Vector2> MutateMoveset(List<Vector2> moveset, float MutationRate)
